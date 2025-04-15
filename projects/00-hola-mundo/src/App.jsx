@@ -3,9 +3,13 @@ import { TwitterFollowCard } from './TwitterFollowCard'
 
 export function App() {
     return(
-        <>  
-            <TwitterFollowCard userName="midudev" name="Miguel Ángel Durán" />
-            <TwitterFollowCard userName="midudev" name="Miguel Ángel Durán" />
-        </>
+        <section className="App">  
+            <TwitterFollowCard isFollowing userName="midudev">
+                Miguel Ángel Durán
+            </TwitterFollowCard>
+            <TwitterFollowCard isFollowing={false} userName="pheralb">
+                Pablo Hernandez
+            </TwitterFollowCard>
+        </section>
     )
 }
