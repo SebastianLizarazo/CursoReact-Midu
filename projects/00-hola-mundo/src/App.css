@@ -1,3 +1,5 @@
+/* To se the documentation see the following link: https://chatgpt.com/share/6805516c-3b30-800d-a3ff-d9b810d1d627 */
+
 .tw-followCard {
     display: flex;
     align-items: center;
@@ -37,15 +39,36 @@
     transition: .3s ease background-color;
 }
 
-.tw-followCard-button.is-following {
-    border: 1px solid red;
+.tw-followCard-button:hover {
+    opacity: .8;
 }
 
-.tw-followCard-button:hover {
-    background-color: #09f;
-    
+.tw-followCard-text {
+    display: block;
+}
+
+.tw-followCard-button.is-following {
+    border: 1px solid #bbb;
+    background: transparent;
+    color: #fff;
+    width: 140px;
+    transition: .3s ease all;
+}
+
+.tw-followCard-button.is-following:hover .tw-followCard-text {
+    display: none;
 }
 
 .tw-followCard-button.is-following:hover {
-    background: red;
+    background-color: rgba(255, 0, 0, 0.178);
+    color: red;
+    border: 1px solid red;
+}
+
+.tw-followCard-button.is-following:hover .tw-followCard-stopFollow{
+    display: block;
+}
+
+.tw-followCard-stopFollow {
+    display: none;
 }

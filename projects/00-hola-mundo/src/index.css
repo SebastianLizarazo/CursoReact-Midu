@@ -1,14 +1,14 @@
 body {
-    margin: 0;
-    background: #222;
-    font-family: system-ui;
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
+    margin: 0;/* remove default margin to avoid unwanted spaces arround the content*/
+    background: #222; /* set background color */
+    font-family: system-ui; /*set local font */
+    display: grid; /* become the body a grid container to facilitate content positioning */
+    place-content: center; /* center the elements inside the grid */
+    min-height: 100vh;/*Set a minimum height for the viewport */
 }
 
 .App {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    display: flex; /* become the container a flex container to facilitate content positioning */
+    flex-direction: column; /* organize the sons's elements in a column, it means one below the other */
+    gap: 8px;/* set a 8px pixel space between the elements */
 }
