@@ -6,4 +6,10 @@ export interface Todo {
     completed: boolean
 }
 
+//tipos de datos que pueden ser usados en el componente
+//Hace que solo sea necesario cambiar los tipos desde aquí
+export type TodoId = Pick<Todo, 'id'>
+export type TodoTitle = Pick<Todo, 'title'> 
+export type TodoCompleted = Pick<Todo, 'completed'>
+
 export type ListOfTodos = Todo[] 

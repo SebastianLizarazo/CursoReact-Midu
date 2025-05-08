@@ -1,0 +1,3 @@
+html { /*Para colocar un modo oscuro "pirata"*/
+    filter: invert(1);
+}
